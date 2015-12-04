@@ -6,7 +6,7 @@ using namespace cv;
 using namespace std;
 
 const static int SENSITIVITY_VALUE = 20;
-const static int BLUR_SIZE = 20;
+const static int BLUR_SIZE = 10;
 
 bool objectDetected = false;
 bool debugMode = false;
@@ -35,7 +35,12 @@ void trackObjects(Mat thresh, Mat &output) {
 	if (objectDetected){
 		// we assume the object we're tracking is the largest contour
 		// which is found at the end of the detected contours
-
+		int idx = 0;
+		for (; idx >= 0; idx = hierarchy[idx][0])
+		{
+			Scalar color( 255, 0, 240);
+			drawContours(output, contours, idx, color, LINE_4, 8, hierarchy);
+		}
 		vector< vector<Point> > largetContour;
 		largetContour.push_back(contours.at(contours.size() - 1));
 
@@ -45,7 +50,7 @@ void trackObjects(Mat thresh, Mat &output) {
 		ypos = objectBoundingRectangle.y + objectBoundingRectangle.height / 2;
 
 	}
-	circle(output, Point(xpos, ypos), 20, Scalar(0, 255, 0), 2);
+	// circle(output, Point(xpos, ypos), 20, Scalar(0, 255, 0), 2);
 
 
 }
@@ -100,10 +105,10 @@ int main(){
 			}
 
 			if (trackingMode){
-				trackObjects(thresholdImg2, frame1);
+				trackObjects(thresholdImg2, frame2);
 			}
 
-			imshow("Tracking", frame1);
+			imshow("Tracking", frame2);
 
 			switch (waitKey(10)){
 

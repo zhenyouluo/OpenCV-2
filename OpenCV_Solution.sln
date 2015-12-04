@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "colorDetection", "colorDete
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "motionDetectionTwoFrames", "motionDetectionTwoFrames\motionDetectionTwoFrames.vcxproj", "{B819F2A4-9AB8-4BAA-9A76-21ABE5B4682B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "backgroundSubstractor", "backgroundSubstractor\backgroundSubstractor.vcxproj", "{12E83294-4212-4779-A8AD-B30FFFDC2826}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -31,6 +33,14 @@ Global
 		{B819F2A4-9AB8-4BAA-9A76-21ABE5B4682B}.Release|Win32.Build.0 = Release|Win32
 		{B819F2A4-9AB8-4BAA-9A76-21ABE5B4682B}.Release|x64.ActiveCfg = Release|x64
 		{B819F2A4-9AB8-4BAA-9A76-21ABE5B4682B}.Release|x64.Build.0 = Release|x64
+		{12E83294-4212-4779-A8AD-B30FFFDC2826}.Debug|Win32.ActiveCfg = Debug|Win32
+		{12E83294-4212-4779-A8AD-B30FFFDC2826}.Debug|Win32.Build.0 = Debug|Win32
+		{12E83294-4212-4779-A8AD-B30FFFDC2826}.Debug|x64.ActiveCfg = Debug|x64
+		{12E83294-4212-4779-A8AD-B30FFFDC2826}.Debug|x64.Build.0 = Debug|x64
+		{12E83294-4212-4779-A8AD-B30FFFDC2826}.Release|Win32.ActiveCfg = Release|Win32
+		{12E83294-4212-4779-A8AD-B30FFFDC2826}.Release|Win32.Build.0 = Release|Win32
+		{12E83294-4212-4779-A8AD-B30FFFDC2826}.Release|x64.ActiveCfg = Release|x64
+		{12E83294-4212-4779-A8AD-B30FFFDC2826}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
