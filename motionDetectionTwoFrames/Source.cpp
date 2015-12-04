@@ -6,7 +6,7 @@ using namespace cv;
 using namespace std;
 
 const static int SENSITIVITY_VALUE = 20;
-const static int BLUR_SIZE = 10;
+const static int BLUR_SIZE = 20;
 
 bool objectDetected = false;
 bool debugMode = false;
@@ -35,6 +35,7 @@ void trackObjects(Mat thresh, Mat &output) {
 	if (objectDetected){
 		// we assume the object we're tracking is the largest contour
 		// which is found at the end of the detected contours
+
 		vector< vector<Point> > largetContour;
 		largetContour.push_back(contours.at(contours.size() - 1));
 
@@ -108,12 +109,12 @@ int main(){
 
 			case 27: //'esc' key has been pressed, exit program.
 				return 0;
-			case 116: //'t' has been pressed. this will toggle tracking
+			case 116: //'t' has been pressed. this will toggle tracking mode
 				trackingMode = !trackingMode;
 				if (trackingMode == false) cout << "Tracking disabled." << endl;
 				else cout << "Tracking enabled." << endl;
 				break;
-			case 100: //'d' has been pressed. this will debug mode
+			case 100: //'d' has been pressed. this will toggle debug mode
 				debugMode = !debugMode;
 				if (debugMode == false) cout << "Debug mode disabled." << endl;
 				else cout << "Debug mode enabled." << endl;
@@ -125,7 +126,6 @@ int main(){
 					while (pause == true){
 						//stay in this loop until 
 						switch (waitKey()){
-							//a switch statement inside a switch statement? Mind blown.
 						case 112:
 							//change pause back to false
 							pause = false;
