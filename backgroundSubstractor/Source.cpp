@@ -1,13 +1,15 @@
 #include "opencv2/imgproc/imgproc.hpp"
-#include "opencv2/videoio/videoio.hpp"
+#include "opencv2/video/video.hpp"
 #include "opencv2/highgui/highgui.hpp"
-#include "opencv2/video/background_segm.hpp"
 #include "opencv2/core/cuda.hpp"
+#include "opencv2/video/background_segm.hpp"
 #include <stdio.h>
 #include <string>
+#include "opencv2\core\core.hpp"
+
 using namespace std;
 using namespace cv;
-using namespace cuda;
+
 static void help()
 {
 	printf("\n"
@@ -53,7 +55,7 @@ int main(int argc, char** argv)
 	bool update_bg_model = true;
 	help();
 	if (argc < 2)
-		cap.open("D:/bouncingBall.avi");
+		cap.open("D:/cctv.mp4");
 	else
 		cap.open(std::string(argv[1]));
 	if (!cap.isOpened())
@@ -71,6 +73,7 @@ int main(int argc, char** argv)
 	namedWindow("video", 1);
 	namedWindow("segmented", 1);
 	Ptr<BackgroundSubtractorMOG2> bgsubtractor = createBackgroundSubtractorMOG2();
+	
 
 	bgsubtractor->setVarThreshold(10);
 	for (;;)

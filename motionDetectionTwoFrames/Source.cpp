@@ -60,7 +60,7 @@ int main(){
 	while (true){
 
 		// opening video stream
-		capture.open("D:/Vehicles.avi");
+		capture.open("D:/cctv.mp4");
 
 		// checking if there is an error with the capture
 		if (!capture.isOpened()) {

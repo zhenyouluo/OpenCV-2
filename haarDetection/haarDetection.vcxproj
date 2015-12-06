@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{12E83294-4212-4779-A8AD-B30FFFDC2826}</ProjectGuid>
+    <ProjectGuid>{DEADE14A-2692-4A6E-82C6-1CCF4558D71B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>backgroundSubstractor</RootNamespace>
-    <ProjectName>backgroundSubtractor</ProjectName>
+    <RootNamespace>haarDetection</RootNamespace>
+    <ProjectName>pedestrianDetection</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
