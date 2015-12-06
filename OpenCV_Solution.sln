@@ -7,7 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "colorDetection", "colorDete
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "motionDetectionTwoFrames", "motionDetectionTwoFrames\motionDetectionTwoFrames.vcxproj", "{B819F2A4-9AB8-4BAA-9A76-21ABE5B4682B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "backgroundSubtractor", "backgroundSubstractor\backgroundSubstractor.vcxproj", "{12E83294-4212-4779-A8AD-B30FFFDC2826}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "backgroundSubtractor", "backgroundSubtractor\backgroundSubtractor.vcxproj", "{12E83294-4212-4779-A8AD-B30FFFDC2826}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "faceDetection", "faceDetection\faceDetection.vcxproj", "{0AFA72F6-4D3A-4A33-B0DF-4B110E267BB0}"
 EndProject

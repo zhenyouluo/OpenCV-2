@@ -8,6 +8,10 @@
 using namespace std;
 using namespace cv;
 
+/*
+EXECUTE FROM THE .EXE
+*/
+
 /** Function Headers */
 void detectAndDisplay(Mat frame);
 
@@ -23,7 +27,7 @@ int main(void)
 	Mat frame;
 
 	//-- 1. Load the cascades
-	if (!body_cascade.load(body_cascade_name)){ printf("--(!)Error loading body cascade\n"); getchar();  return -1; };
+	if (!body_cascade.load(body_cascade_name)){ printf("--(!)Error loading body cascade\n");  return -1; };
 
 	//-- 2. Read the video stream
 	capture.open("D:/cctv.mp4");
