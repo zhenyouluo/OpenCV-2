@@ -22,7 +22,7 @@
     <ProjectGuid>{DEADE14A-2692-4A6E-82C6-1CCF4558D71B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>haarDetection</RootNamespace>
-    <ProjectName>pedestrianDetection</ProjectName>
+    <ProjectName>pedestrianHaarDetection</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
